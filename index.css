@@ -1,22 +1,23 @@
-body {
+body{
+
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
+    background-size:cover;
 
   }
 .image{
-  position: absolute;
+
   width: 100%;
   margin-top: -50px;
 }
   .logo {
-    position:absolute;
-    width: 100px;
-    margin-top:-20px;
+    display: flex;
+    width: 10px;
+    z-index: 1;
 
   }
 .topnav {
-  position: relative;
+    position: relative;
     overflow:hidden;
     background-color: #333;
     float: right;
@@ -93,3 +94,31 @@ body {
     background-color: #04AA6D;
     border-radius: 10px;
   }
+
+  .square {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    /* background-image: url("pics/webd.png"); */
+    z-index: 0;
+    margin-top: 200px;
+    margin-left: 200px;
+    border-top-right-radius: 160px;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+
+
+    }
+/* 
+    .square image {
+      width: 300px;
+      height: 250px;
+    } */
+
+    /* @keyframes first {
+      0% {left: 200px; top: 200px}
+      100% {left: 290px; top:200px}
+      
+    } */
