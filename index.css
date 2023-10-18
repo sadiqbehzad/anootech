@@ -1,7 +1,7 @@
 body{
     background-image: url("pics/background.png");
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-size:cover;
     background-attachment: fixed;
 
@@ -21,6 +21,7 @@ body{
     background-color: #333;
     width: 80%;
     border-bottom-left-radius: 10px;
+    font-weight: bold;
     
 }
   .topnav a {
@@ -59,62 +60,106 @@ body{
     margin-top: 12px;
     background-color: transparent;
   }
-  
-  .searchbutton :hover {
-    
-  }
-  .simg {
+
+  .topnav .searchImg {
     height: 15px;
     width: 15px;
     
   }
-  .dropdown {
-    position: relative;
+  .mainDropdown {
+    display: flex;
     float: right;
-    margin-right: 450px;
-  }
-  .button {
+    justify-content: flex-end;
 
+  }
+  .dropdown1 {
+    display: block;
+    margin-left: 300px;
+    margin-top: -60px;
+    width: 120px;
+  }
+  
+  .dropdown1 .Bttn {
     width: 120px;
     color: #333;
     text-align: center;
     padding: 14px 16px; 
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     font-size: 17px;
     background-color: transparent;
     border: 0px;
-
+    cursor:pointer;
   }
-  .dropdown :hover {
-    background-color: #04AA6D;
+  .dropdown1-contents {
+    display: none;
+    position:absolute;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
     border-radius: 10px;
+
+  }
+  .dropdown1-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown1:hover .dropdown1-contents{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
   }
 
-  .square {
-    position: absolute;
-    width: 20px;
-    height: 30px;
-    /* background-image: url("pics/webd.png"); */
-    z-index: 0;
-    margin-top: 200px;
-    margin-left: 200px;
-    border-top-right-radius: 160px;
-    border-bottom-left-radius: 60px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+  .dropdown1 .dropdown1-contents :hover {
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+  }
 
+  .dropdown2 {
+    display: block;
+    margin-left: 300px;
+    margin-top: -60px;
+    width: 120px;
+  }
+  
+  .dropdown2 .Bttn {
+    width: 120px;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: transparent;
+    border: 0px;
+    cursor:pointer;
+  }
+  .dropdown1-contents {
+    display: none;
+    position:absolute;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
 
-    }
-/* 
-    .square image {
-      width: 300px;
-      height: 250px;
-    } */
+  }
+  .dropdown1-contents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown1:hover .dropdown1-contents{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+  }
 
-    /* @keyframes first {
-      0% {left: 200px; top: 200px}
-      100% {left: 290px; top:200px}
-      
-    } */
+  .dropdown1 .dropdown1-contents :hover {
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+  }
