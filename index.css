@@ -1,4 +1,4 @@
-body{
+html, body{
     background-image: url("pics/background.png");
     margin: 0;
     font-family: 'Nunito', sans-serif;
@@ -6,8 +6,11 @@ body{
     background-attachment: fixed;
 
   }
+.top {
+  display: flex;
+  gap: 10%;
+}
 .logo {
-  display: inline-flex;
   width: 200px;
 }
   .logo img {
@@ -15,78 +18,73 @@ body{
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
   }
 
-.topnav {
-    display: flex;
-    float: right;
-    background-color: #333;
-    width: 80%;
-    border-bottom-left-radius: 10px;
-    font-weight: bold;
-    
+nav {
+  display: inline-flex;
+  width: 100%;
+  height: 50px;
+  margin-top: -20px; /* is it the right way???*/
+  /* position: absolute; */
 }
-  .topnav a {
-    height: 35px;
-    width: 150px;
-    color: white;
-    text-align:center;
-    padding-top: 17.5px;
-    text-decoration: none;
-  }
-  .topnav input {
-    height: 30px;
-    width: 150px;
-    margin-right: 50px;
-    margin-left: 400px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border-width: 0px;
 
-  }
-  .topnav a.active {
-    background-color: #04AA6D;
-  }  
-  .topnav a:hover {
-      background-color: #ddd;
-      color: black;   
-    }
+nav ul {
+  display: flex;
+  justify-content:flex-start;
+  list-style: none;
+  background-color: #333;
+  width: 100%;
+  height: 41px;
+  align-items: center;
+  padding-left: 0px;
+  border-bottom-left-radius: 10px;
 
-  .topnav .searchbutton {
-    width: 30px;
-    height: 30px;
-    align-items: center;
-    margin-left: -80px;
-    border-width: 0px;
-    border-radius: 10px;
-    margin-top: 12px;
-    background-color: transparent;
-  }
+}
 
-  .topnav .searchImg {
-    height: 15px;
-    width: 15px;
-    
-  }
-
-  .dropdown1 {
-    display: flex;
-    margin-left: 300px;
-    margin-top: -60px;
-    width: 120px;
-  }
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-align: center;
+  border: 0px;
+  height: 100px;
   
-  .dropdownsBttn {
-    width: 120px;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px; 
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    background-color: transparent;
-    border: 0px;
-    cursor:pointer;
+
+}
+.search {
+  margin-right: 10px;
+  margin-left: 50%;
+  border-radius: 5px;
+  width: 15%;
+}
+
+nav ul :hover {
+  background-color: #04AA6D;
+}
+
+.dropdownMenu {
+  display: flex;
+}
+
+.dropdown1 {
+  display: block;
+  margin-left: 330px;
+  margin-top: -60px;
+  width: 120px;
+}
+  
+.dropdownsBttn {
+  width: 120px;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px; 
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: transparent;
+  border: 0px;
+  cursor:pointer;
   }
+
   .dropdowns-contents {
     display: none;
     position:absolute;
@@ -113,13 +111,30 @@ body{
   }
 
   .dropdown2 {
-    display: inline-flex;
-    /* margin-left: 300px; */
+    display: block;
     margin-top: -60px;
     width: 120px;
   }
 
   .dropdown2:hover .dropdowns-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .dropdown3 {
+    display: block;
+    margin-top: -60px;
+    width: 120px;
+  }
+  .dropdown3:hover .dropdowns-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .dropdown4 {
+    display: block;
+    margin-top: -60px;
+    width: 120px;
+  }
+  .dropdown4:hover .dropdowns-contents {
     display: grid;
     grid-template-columns: repeat(2, 150px);
   }
