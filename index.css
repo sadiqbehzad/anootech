@@ -54,16 +54,6 @@ nav a {
   
 
 }
-.search {
-  display: block;
-  margin-top: -8%;
-  margin-left: 88%;
-  border-radius: 5px;
-  border:1px solid white;
-  background-color: blue;
-
-  /* width: 10%; */
-}
 
 nav ul :hover {
   background-color: #04AA6D;
@@ -79,11 +69,12 @@ nav ul :hover {
 }
 
 .dropdownMenu {
-  margin-top: -7%;
   display: flex;
-  justify-content:left;
+  justify-content:space-around;
+  width: 65%;
+  margin-top: -6%;
   gap: 50px;
-  margin-left: 20%;
+  margin-left: 18%;
   
 }
 
@@ -137,10 +128,6 @@ nav ul :hover {
     display: grid;
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: 40px 40px 40px;
-
-   
-  
-
 
   }
 
@@ -196,12 +183,26 @@ nav ul :hover {
 
   }
 
-.mainSection {
-  display: flex;
-  margin-top: 7%;
-  gap: 100px;
+/* .mainSection {
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
-  z-index: -1;
+
+  margin-top: 20%;
+  align-items: center;
+  z-index: 0;
+  border: 1px solid black;
+} */
+.pictureGroups {
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2%;
+  justify-content: center;
+  z-index: 1;
+  margin-left: 0px;
+  
+
 
 }
 
@@ -210,24 +211,18 @@ nav ul :hover {
   grid-template-columns: repeat(2,205px);
   align-items: center;
   z-index: 0;
-}
-.group1 a {
 
-  padding:0px;
-  margin: 0px;
 }
+
 .group2 {
   display:grid;
   grid-template-columns: repeat(2,205px);
   align-items: center;
-
   z-index: 1;
 
+
 }
-.group2 a {
-  padding:0px;
-  margin: 0px;
-}
+
 .group3 {
   display:grid;
   grid-template-columns: repeat(2,205px);
@@ -252,7 +247,7 @@ nav ul :hover {
 } 
 
 .group1 :hover{
-  border: 2px solid yellow;
+  border: 0.1px solid yellow;
    
 }
 
@@ -316,8 +311,13 @@ nav ul :hover {
 }
 
 .categoryNames {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 
 }
 
@@ -326,6 +326,7 @@ nav ul :hover {
   background-color: red;
   z-index: 10;
   margin-left: -300px;
+
 }
 
 
