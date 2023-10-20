@@ -230,12 +230,9 @@ nav ul :hover {
   z-index: 5;
 } 
 
-
 .group1 :hover{
   border: 2px solid yellow;
- 
-
-  
+   
 }
 
 .group2 :hover {
