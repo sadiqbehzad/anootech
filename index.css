@@ -215,7 +215,7 @@ nav ul :hover {
 
 }
 
-.firewall {
+.firstBox {
   display:inline-flex;
   justify-content:end;
   border-top-right-radius: 20px;
@@ -248,7 +248,7 @@ nav ul :hover {
   to  {transform: scale(1);};
 }
 
-.cloud {
+.secondBox {
   display:inline-flex;
   justify-content:end;
   border-top-left-radius: 20px;
@@ -264,7 +264,7 @@ nav ul :hover {
 }
 
 
-.security {
+.thirdBox {
   display:inline-flex;
   justify-content:end;
   border-top-left-radius: 20px;
@@ -279,7 +279,7 @@ nav ul :hover {
 
 }
 
-.webdes {
+.fourthdBox {
   display:inline-flex;
   justify-content:end;
   border-top-right-radius: 20px;
