@@ -19,7 +19,7 @@ html, body{
   }
 
 nav {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   height: 50px;
   margin-top: -20px; /* is it the right way???*/
@@ -46,15 +46,16 @@ nav a {
   border: 0px;
   height: 100px;
   font-family: 'Nunito', sans-serif;
+
  
   
 
 }
 .search {
   margin-right: 10px;
-  margin-left: 50%;
+  margin-left: 35%;
   border-radius: 5px;
-  width: 15%;
+  width: 10%;
 }
 
 nav ul :hover {
@@ -71,20 +72,24 @@ nav ul :hover {
 }
 
 .dropdownMenu {
+  margin-top: -5%;
   display: flex;
+  justify-content:center;
+  gap: 50px;
   
 }
 
 .dropdown1 {
   display: block;
-  margin-left: 330px;
-  margin-top: -4%;
+  /* margin-left: 330px; */
+  /* margin-top: -4%; */
   width: 120px;
 
 }
   
 .dropdownsBttn {
-  width: 120px;
+  display: inline-flex;
+  width: 140px;
   color: #333;
   text-align: center;
   padding: 14px 16px; 
@@ -94,18 +99,18 @@ nav ul :hover {
   background-color: transparent;
   border: 0px;
   cursor:pointer;
+  /* margin-left: 330px; */
   }
 
   .dropdowns-contents {
     display: none;
     position:absolute;
-    width: 100%;
-    margin-left: -22%;
+    /* width: 100%; */
+    /* margin-left: -22%; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
     border-radius: 0px;
     background-color: #333;
-    transition: height 12s;
     padding-bottom: 30px;
 
 
@@ -117,9 +122,6 @@ nav ul :hover {
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
-
-
-    
 
 
   }
@@ -143,7 +145,7 @@ nav ul :hover {
 
   .dropdown2 {
     display: block;
-    margin-top: -4%;
+    /* margin-top: -4%; */
     width: 120px;
 
   }
@@ -155,7 +157,7 @@ nav ul :hover {
   }
   .dropdown3 {
     display: block;
-    margin-top: -4%;
+    /* margin-top: -4%; */
     width: 120px;
   }
   .dropdown3:hover .dropdowns-contents {
@@ -165,7 +167,7 @@ nav ul :hover {
   }
   .dropdown4 {
     display: block;
-    margin-top: -4%;
+    /* margin-top: -4%; */
     width: 120px;
   }
   .dropdown4:hover .dropdowns-contents {
@@ -174,10 +176,21 @@ nav ul :hover {
     grid-template-rows: 40px 40px 40px;
 
   }
+  .dropdown5 {
+    display: block;
+    /* margin-top: -4%; */
+    width: 120px;
+  }
+  .dropdown5:hover .dropdowns-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: 40px 40px 40px;
+
+  }
 
 .mainSection {
   display: flex;
-  margin-top: 5%;
+  margin-top: 7%;
   gap: 100px;
   justify-content: center;
   z-index: -1;
@@ -299,4 +312,12 @@ nav ul :hover {
   justify-content: space-around;
 
 }
+
+.tooltip{
+  display: none;
+  background-color: red;
+  z-index: 10;
+  margin-left: -300px;
+}
+
 
