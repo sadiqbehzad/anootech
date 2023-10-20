@@ -8,7 +8,7 @@ html, body{
   }
 .top {
   display: flex;
-  gap: 10%;
+  gap: 5%;
 }
 .logo {
   width: 200px;
@@ -20,14 +20,16 @@ html, body{
 
 nav {
   display: flex;
-  width: 100%;
+  width: 65%;
   height: 50px;
   margin-top: -20px; /* is it the right way???*/
+  margin-right: 0px;
+
 }
 
 nav ul {
   display: flex;
-  justify-content:flex-start;
+  justify-content:space-around;
   list-style: none;
   background-color: #333;
   width: 100%;
@@ -35,6 +37,7 @@ nav ul {
   align-items: center;
   padding-left: 0px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
 }
 
@@ -52,10 +55,14 @@ nav a {
 
 }
 .search {
-  margin-right: 10px;
-  margin-left: 35%;
+  display: block;
+  margin-top: -8%;
+  margin-left: 88%;
   border-radius: 5px;
-  width: 10%;
+  border:1px solid white;
+  background-color: blue;
+
+  /* width: 10%; */
 }
 
 nav ul :hover {
@@ -72,10 +79,11 @@ nav ul :hover {
 }
 
 .dropdownMenu {
-  margin-top: -5%;
+  margin-top: -7%;
   display: flex;
-  justify-content:center;
+  justify-content:left;
   gap: 50px;
+  margin-left: 20%;
   
 }
 
