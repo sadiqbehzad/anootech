@@ -1,5 +1,7 @@
 html, body{
-    /* background-image: url("pics/background.png"); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: 'Nunito', sans-serif;
     background-size:cover;
@@ -202,6 +204,7 @@ nav ul :hover {
   justify-content: center;
   z-index: 1;
   margin-left: 0px;
+  /* width: 100%; */
   
 
 
@@ -322,13 +325,42 @@ nav ul :hover {
 
 }
 
-.secondPart {
-  display: flex;
-  width: 100%;
-  height: 500px;
-  background-color:black;
+.gradient-section {
+  /* width: 100%;
+  height: 500px; */
+  background-color:#041955;
+  background-image: linear-gradient(#041955, #40c1dd);
   margin-top: 5%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
 }
+.gradient-contents {
+  display: grid;
+  grid-template-rows: .75fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+.firstSection {
+  display: grid;
+  grid-template-columns: .75fr 1fr;
+  border: 1px solid yellow;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  padding: 75px;
+
+
+
+}
+.secondSection {
+  display: grid;
+  grid-template-columns: .75fr .75fr 1fr;
+  border: 1px solid yellow;
+}
+
+
 
 .footer {
   display: grid;
@@ -338,7 +370,8 @@ nav ul :hover {
   background-color: #041955;
   color: white;
   align-items: center;
-  margin-top:5%;
+  margin-top:4%;
+  bottom: 0;
 
 }
 
