@@ -204,17 +204,60 @@ nav ul :hover {
 .pictureGroups {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 4%;
-  justify-content: center;
-  z-index: 1;
-  padding: 0rem 0rem 2rem 0rem;
   width:100%;
-  
+  gap: 4%;
+  justify-content:center;
+  z-index: 1;
+  padding: 1rem 0rem 1rem 0rem;
+  border: 1px solid black;
+  align-items: center;
+  margin-bottom: 2%;
+}
 
+.group1, .group2, .group3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  border: 1px solid black;
 
 }
 
-.pictureGroups .group1 {
+.top-left-box {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px
+  
+  
+}
+.top-right-box  {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px
+}
+.bottom-right-box {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px
+}
+.bottom-left-box  {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px
+}
+
+/* .pictureGroups .group1 {
   display:grid;
   grid-template-columns: repeat(2,205px);
   align-items: center;
@@ -242,8 +285,13 @@ nav ul :hover {
 .firstBox {
   display:inline-flex;
   justify-content:end;
+  
+} 
+.firstBox .top-left {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  background-image: url("pics/ManagedIT.jpg");
+  background-size: cover;
   width: 200px;
   height: 200px;
   object-fit:cover;
@@ -252,10 +300,9 @@ nav ul :hover {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   z-index: 5;
-} 
-
-.group1 :hover{
-  border: 0.1px solid yellow;
+}
+.top-left:hover .firstBox {
+  background-image: url("pics/Logo.png");
    
 }
 
@@ -327,7 +374,7 @@ nav ul :hover {
   text-align: center;
   z-index: 1;
 
-}
+} */
 
 .gradient-section {
   background-color:#041955;
