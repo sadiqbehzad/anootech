@@ -183,21 +183,22 @@ nav ul :hover {
 
   }
 
-/* .mainSection {
-  display: grid;
-  grid-template-columns: auto auto auto;
+.slogan{
+  display: flex;
   justify-content: center;
+  width: 100%;
+  margin: auto;
+  font-size: x-large;
+  font-family: 'Archivo Black', sans-serif;
+  color:rgb(40, 26, 91);
+}
 
-  margin-top: 20%;
-  align-items: center;
-  z-index: 0;
-  border: 1px solid black;
-} */
+
 .pictureGroups {
-  margin-top: 6%;
+  margin-top: 0%;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 2%;
+  gap: 6%;
   justify-content: center;
   z-index: 1;
   margin-left: 0px;
@@ -321,11 +322,23 @@ nav ul :hover {
 
 }
 
-.tooltip{
-  display: none;
-  background-color: red;
-  z-index: 10;
-  margin-left: -300px;
+.secondPart {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color:black;
+  margin-top: 5%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 10%;
+  background-color: #041955;
+  color: white;
+  align-items: center;
+  margin-top:5%;
 
 }
 
