@@ -211,6 +211,7 @@ nav ul :hover {
   margin-bottom: 0;
   row-gap: 0rem;
 }
+
 .services .it-infra, .dev-sw, .sec-consulting {
   display:grid;
   grid-template-columns: auto auto;
@@ -220,6 +221,27 @@ nav ul :hover {
   padding: 0rem 0rem 0rem 0rem;
   gap:1%;
   
+}
+.it-infra h3 {
+  color:orange;
+  font-weight: bolder;
+  font-size: x-large;
+  margin: 8rem 0rem 0rem 0rem;
+
+}
+.dev-sw h3 {
+  color:orange;
+  font-weight: bolder;
+  font-size: x-large;
+  margin: 8rem 0rem 0rem 0rem;
+
+}
+.sec-consulting h3 {
+  color:orange;
+  font-weight: bolder;
+  font-size: x-large;
+  margin: 8rem 0rem 0rem 0rem;
+
 }
 
 .it-infra .managed-ser, .net-setup, .hw-support, .virtualization{
@@ -231,6 +253,8 @@ nav ul :hover {
 
 }
 .managed-ser .managed-ser-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/ManagedIT.jpg");
   width: 200px;
   height: 200px;
@@ -238,14 +262,21 @@ nav ul :hover {
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
  
 }
 .managed-ser:hover .managed-ser-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/managed-ser.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
+
 }
 
 .net-setup .net-setup-pic{
+  display: flex;
+  justify-content: center;
   background-image: url("pics/Network.jpg");
   width: 200px;
   height: 200px;
@@ -253,12 +284,18 @@ nav ul :hover {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .net-setup:hover .net-setup-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/net-setup.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .hw-support .hw-support-pic{
+  display: flex;
+  justify-content: center;
   background-image: url("pics/HardwareSupport.jpg");
   width: 200px;
   height: 200px;
@@ -266,12 +303,18 @@ nav ul :hover {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .hw-support:hover .hw-support-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/hw-support.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .virtualization .virtualization-pic{
+  display: flex;
+  justify-content: center;
   background-image: url("pics/Virtualization.jpg");
   width: 200px;
   height: 200px;
@@ -279,10 +322,14 @@ nav ul :hover {
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .virtualization:hover .virtualization-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/virtualization.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 
 .dev-sw .sw-dev, .web-dev, .database, .data-backup{
@@ -292,6 +339,8 @@ nav ul :hover {
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
 }
 .sw-dev .sw-dev-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/SoftwareDev.jpg");
   width: 200px;
   height: 200px;
@@ -299,12 +348,18 @@ nav ul :hover {
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .sw-dev:hover .sw-dev-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/sw-dev.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .web-dev .web-dev-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/WebDev.png");
   width: 200px;
   height: 200px;
@@ -312,13 +367,19 @@ nav ul :hover {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .web-dev:hover .web-dev-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/web-dev.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 
 .database .database-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/Database.jpg");
   width: 200px;
   height: 200px;
@@ -326,12 +387,18 @@ nav ul :hover {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .database:hover .database-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/database.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .data-backup .data-backup-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/databkup.jpg");
   width: 200px;
   height: 200px;
@@ -339,10 +406,14 @@ nav ul :hover {
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .data-backup:hover .data-backup-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/data-backup.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 
 .sec-consulting .cyber, .cloud, .it-consulting, .helpdesk{
@@ -352,6 +423,8 @@ nav ul :hover {
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
 }
 .cyber .cyber-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/cybersec.jpeg");
   width: 200px;
   height: 200px;
@@ -359,12 +432,18 @@ nav ul :hover {
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .cyber:hover .cyber-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/cyber-sec.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .cloud .cloud-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/cloud.jpg");
   width: 200px;
   height: 200px;
@@ -372,12 +451,18 @@ nav ul :hover {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .cloud:hover .cloud-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/cloud-ser.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .it-consulting .it-consulting-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/ITConsulting.jpeg");
   width: 200px;
   height: 200px;
@@ -385,12 +470,18 @@ nav ul :hover {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .it-consulting:hover .it-consulting-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/it-consulting.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 }
 .helpdesk .helpdesk-pic {
+  display: flex;
+  justify-content: center;
   background-image: url("pics/helpdesk.jpg");
   width: 200px;
   height: 200px;
@@ -398,10 +489,14 @@ nav ul :hover {
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
+  text-align: center;
+  align-items: center;
 }
 .helpdesk:hover .helpdesk-pic{
-  background-image: url("pics/Logo.png");
+  background-image: url("pics/helpdesk.png");
   background-size: cover;
+  opacity: 1;
+  animation: fade 1s linear;
 
 }
 .it-infra-label, .dev-sw-label, .sec-consulting-label {
@@ -415,9 +510,9 @@ nav ul :hover {
 }
 
 
-@keyframes zoom {
-  from   {transform: scale(0.05)}
-  to  {transform: scale(1);};
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
 }
 
 
