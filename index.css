@@ -195,186 +195,231 @@ nav ul :hover {
   
 }
 .slogan h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 .slogan span {
   color: #40c1dd;
 }
 
-.pictureGroups {
+.services {
   display: grid;
   grid-template-columns: auto auto auto;
-  width:100%;
-  gap: 4%;
-  justify-content:center;
-  z-index: 1;
-  padding: 1rem 0rem 1rem 0rem;
-  border: 1px solid black;
-  align-items: center;
-  margin-bottom: 2%;
+  justify-content: center;
+  gap: 5%;
+  padding: 2rem 0rem 2rem 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0;
+  row-gap: 0rem;
 }
-
-.group1, .group2, .group3 {
-  display: grid;
+.services .it-infra, .dev-sw, .sec-consulting {
+  display:grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  border: 1px solid black;
-
-}
-
-.top-left-box {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  border: 1px solid black;
-  width: 200px;
-  height: 200px
-  
+  width: 400px;
+  height: 400px;
+  padding: 0rem 0rem 0rem 0rem;
+  gap:1%;
   
 }
-.top-right-box  {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  border: 1px solid black;
-  width: 200px;
-  height: 200px
-}
-.bottom-right-box {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  border: 1px solid black;
-  width: 200px;
-  height: 200px
-}
-.bottom-left-box  {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  border: 1px solid black;
-  width: 200px;
-  height: 200px
-}
 
-/* .pictureGroups .group1 {
-  display:grid;
-  grid-template-columns: repeat(2,205px);
-  align-items: center;
-  z-index: 0;
-
-}
-
-.pictureGroups .group2 {
-  display:grid;
-  grid-template-columns: repeat(2,205px);
-  align-items: center;
-  z-index: 1;
-
-
-}
-
-.pictureGroups .group3 {
-  display:grid;
-  grid-template-columns: repeat(2,205px);
-  align-items: center;
-  z-index: 1;
-
-}
-
-.firstBox {
-  display:inline-flex;
-  justify-content:end;
-  
-} 
-.firstBox .top-left {
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-image: url("pics/ManagedIT.jpg");
-  background-size: cover;
+.it-infra .managed-ser, .net-setup, .hw-support, .virtualization{
+  display:flex;
   width: 200px;
   height: 200px;
-  object-fit:cover;
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-  animation-name: zoom;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  z-index: 5;
+
+
 }
-.top-left:hover .firstBox {
+.managed-ser .managed-ser-pic {
+  background-image: url("pics/ManagedIT.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border: 1px solid #041955;
+ 
+}
+.managed-ser:hover .managed-ser-pic{
   background-image: url("pics/Logo.png");
-   
+  background-size: cover;
 }
 
-.group2 :hover {
-  border: 2px solid yellow;
+.net-setup .net-setup-pic{
+  background-image: url("pics/Network.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border: 1px solid #041955;
 }
-.group3 :hover {
-  border: 2px solid yellow;
+.net-setup:hover .net-setup-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.hw-support .hw-support-pic{
+  background-image: url("pics/HardwareSupport.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border: 1px solid #041955;
+}
+.hw-support:hover .hw-support-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.virtualization .virtualization-pic{
+  background-image: url("pics/Virtualization.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border: 1px solid #041955;
+}
+.virtualization:hover .virtualization-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+
+.dev-sw .sw-dev, .web-dev, .database, .data-backup{
+  display:flex;
+  width: 200px;
+  height: 200px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+}
+.sw-dev .sw-dev-pic {
+  background-image: url("pics/SoftwareDev.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border: 1px solid #041955;
+}
+.sw-dev:hover .sw-dev-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.web-dev .web-dev-pic {
+  background-image: url("pics/WebDev.png");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border: 1px solid #041955;
+}
+.web-dev:hover .web-dev-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+
+.database .database-pic {
+  background-image: url("pics/Database.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border: 1px solid #041955;
+}
+.database:hover .database-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.data-backup .data-backup-pic {
+  background-image: url("pics/databkup.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border: 1px solid #041955;
+}
+.data-backup:hover .data-backup-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+
+.sec-consulting .cyber, .cloud, .it-consulting, .helpdesk{
+  display:flex;
+  width: 200px;
+  height: 200px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+}
+.cyber .cyber-pic {
+  background-image: url("pics/cybersec.jpeg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border: 1px solid #041955;
+}
+.cyber:hover .cyber-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.cloud .cloud-pic {
+  background-image: url("pics/cloud.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border: 1px solid #041955;
+}
+.cloud:hover .cloud-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.it-consulting .it-consulting-pic {
+  background-image: url("pics/ITConsulting.jpeg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border: 1px solid #041955;
+}
+.it-consulting:hover .it-consulting-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
+}
+.helpdesk .helpdesk-pic {
+  background-image: url("pics/helpdesk.jpg");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border: 1px solid #041955;
+}
+.helpdesk:hover .helpdesk-pic{
+  background-image: url("pics/Logo.png");
+  background-size: cover;
 
 }
+.it-infra-label, .dev-sw-label, .sec-consulting-label {
+  text-align: center;
+  padding: 0rem 0rem 1rem 0rem;
+}
+.services h2 {
+  color:#041955;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
 
 @keyframes zoom {
   from   {transform: scale(0.05)}
   to  {transform: scale(1);};
 }
 
-.secondBox {
-  display:inline-flex;
-  justify-content:end;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 200px;
-  height: 200px;
-  object-fit:cover;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-  animation-name: zoom;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-
-}
-
-
-.thirdBox {
-  display:inline-flex;
-  justify-content:end;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 200px;
-  height: 200px;
-  object-fit:cover;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-  animation-name: zoom;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-
-}
-
-.fourthdBox {
-  display:inline-flex;
-  justify-content:end;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  width: 200px;
-  height: 200px;
-  object-fit:cover;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-  animation-name: zoom;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-
-}
-
-.categoryNames {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 2%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 1;
-
-} */
 
 .gradient-section {
   background-color:#041955;
