@@ -192,6 +192,7 @@ nav ul :hover {
   font-family: 'Archivo Black', sans-serif;
   color:rgb(40, 26, 91);
   padding: 2rem 0rem 0rem 0rem;
+  text-shadow: 1px 1px 1px #40c1dd;
   
 }
 .slogan h1 {
@@ -199,6 +200,7 @@ nav ul :hover {
 }
 .slogan span {
   color: #40c1dd;
+  text-shadow: 1px 1px 1px rgb(40, 26, 91);
 }
 
 .services {
@@ -222,27 +224,7 @@ nav ul :hover {
   gap:1%;
   
 }
-.it-infra h3 {
-  color:orange;
-  font-weight: bolder;
-  font-size: x-large;
-  margin: 8rem 0rem 0rem 0rem;
 
-}
-.dev-sw h3 {
-  color:orange;
-  font-weight: bolder;
-  font-size: x-large;
-  margin: 8rem 0rem 0rem 0rem;
-
-}
-.sec-consulting h3 {
-  color:orange;
-  font-weight: bolder;
-  font-size: x-large;
-  margin: 8rem 0rem 0rem 0rem;
-
-}
 
 .it-infra .managed-ser, .net-setup, .hw-support, .virtualization{
   display:flex;
@@ -485,7 +467,7 @@ nav ul :hover {
   background-image: url("pics/helpdesk.jpg");
   width: 200px;
   height: 200px;
-  background-size: cover;
+  background-size:cover;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   border: 1px solid #041955;
