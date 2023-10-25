@@ -3,7 +3,7 @@ function showDropdown() {
   let elemDiv = document.createElement("button");
   elemDiv.innerHTML = "&times";
   elemDiv.style.cssText =
-    "width: 20px; height: 20px; background-color: red;text-align: center; z-index:10; padding: 0";
+    "width: 20px; height: 20px; background-color: white; color: black; text-align: center; z-index:10; padding: 0; margin: 0";
 
   elemDiv.setAttribute("onclick", "basta()");
   elemDiv.setAttribute("type", "button");
