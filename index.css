@@ -66,6 +66,7 @@ nav ul {
   display: none;
   cursor: pointer;
 }
+
 nav a {
   text-decoration: none;
   padding: 0.6rem 1rem 0.5rem 1rem;
@@ -658,23 +659,34 @@ footer .firstSection {
   }
   .menuIcon {
     display: flex;
-    padding: 0.6rem 1rem 0.5rem 1rem;
+    padding: 0.85rem 1rem 0.5rem 1rem;
     margin: 0rem;
+    background-color: #333;
+    border: none;
     color: white;
     text-align: center;
     font-family: 'Nunito', sans-serif;
   }
+
+  /* .closeButton {
+    display:block;
+    width: 20px; 
+    height: 20px; 
+    background-color: red; 
+    text-align: center; 
+    z-index: 10; 
+    padding: 0px;
+  } */
 
   .dropdownsBttn {
     display: flex;
     border: 1px solid black;
     font-size: 0.9rem;
     font-weight: bolder;
+    color: white;
 
   }
-  .menuIcon:hover .dropdownMenu {
-    display: grid;
-  }
+ 
   .dropdown1:hover .dropdownsBttn {
     font-weight: bold;
     background-color: #04AA6D;
@@ -687,7 +699,7 @@ footer .firstSection {
   .dropdownsBttn:after {
     /*to add space before arrow below, add \00a0 before it.*/
     content: "\00a0\00a0\00a0▶";
-   
+
 
     
   }
@@ -695,6 +707,8 @@ footer .firstSection {
     display: none;
     grid-template-columns: auto;
     justify-content: left;
+    background-color: #333;
+    width: 50%;
     margin-top: 1rem;
     padding-left: 0rem;
     gap: 1rem;

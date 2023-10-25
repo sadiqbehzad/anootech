@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ultra&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="top">
@@ -26,7 +27,7 @@
       <section class="navigation">
         <nav>
           <ul>
-            <li class="menuIcon"> &#8801 </li>
+            <button class="menuIcon" id="menu" onclick="showDropdown()">&#8801</button>
             <li>
               <a href="Home.html">Home</a>
             </li>
@@ -41,7 +42,8 @@
             </li>
           </ul>
         </nav>
-        <div class="dropdownMenu">
+        <div class="dropdownMenu" id ="dropdownmenu">
+          <!-- <button class="closeButton" onclick="basta()" type="button" >×</button> -->
           <div class="dropdown1">
             <button class="dropdownsBttn" type="button">
               Solutions <span>&nbsp;⩔</span>
