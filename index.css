@@ -4,28 +4,19 @@ html, body{
     /* min-height: 100vh; */
     margin-top: 0rem;
     font-family: 'Nunito', sans-serif;
+    background-color: #1e1e1e;
 
 
   }
-.top {
-  display: grid;
-  grid-template-columns: 0.4fr auto;
-  column-gap: 0rem;
-  width: 90%;
-  z-index: 2;
-  /* padding: 0rem 0rem 0rem 0rem;   */
 
-
-}
 .logo {
-  display: flex;
-  width: 1%;
+  position: fixed;
   padding: 0rem;
   margin: 0rem;
+  float:left;
 
 }
 .logo img {
-  display: flex;
   width: 12.5rem;
   height: 9rem;
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
@@ -34,70 +25,87 @@ html, body{
 
 }
 
-.top .navigation {
+.navigation {
   display: grid;
   grid-template-rows: auto auto;
-  row-gap: 0rem;
   width: 100%;
   margin-top: 0;
+  justify-content: center;
+  z-index: 10;
 
 }
  nav {
+  display: flex;
   width: 100%;
-  height: 2.5rem;
-  
+  justify-content: center;
+  /* gap: 1rem; */
+
+}
+nav button {
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor:pointer;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
-  justify-content:left;
+  justify-content:center;
   gap: 1rem;
   list-style: none;
-  background-color: #333;
+  background-color: transparent;
   width: 100%;
   height: 2.5rem;
   align-items: center;
-  /* padding-left: 1rem; */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin: 0rem;
+  padding-bottom: 1rem;
+  margin-top:0;
 
-}
+} */
 .menuIcon {
   display: none;
   cursor: pointer;
 }
 
-nav a {
+/* nav a {
   text-decoration: none;
   padding: 0.6rem 1rem 0.5rem 1rem;
   margin: 0rem;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   font-family: 'Nunito', sans-serif;
 }
 
 nav ul :hover {
-  background-color: #04AA6D;
-} 
+  background-color: #2f899d;
+}  */
 
 .dropdownMenu {
   display: flex;
-  justify-content:left;
+  justify-content:center;
   width: 100%;
   gap: 2rem;
-  padding-left: 1rem;
+  padding: 0;
+  margin-top:1rem;
+  text-align: center;
   
 }
 
 .dropdown1 {
   display: block;
   width: 9rem;
+  align-items: center;
 
 }
 
 .dropdownsBttn {
-  display: block;
+  display: flex;
   width: 8.75rem;
   color: #333;
   text-align: center;
@@ -110,6 +118,7 @@ nav ul :hover {
   border: 0px;
   cursor:pointer;
   padding: 0rem;
+  color: whitesmoke;
   /* z-index: 10; */
   }
 
@@ -119,7 +128,7 @@ nav ul :hover {
     position:absolute;
     width: 10rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /* z-index: 2; */
+    z-index: 2;
     border-radius: 1rem;
     background-color: #333;
     padding-bottom: 1.875rem;
@@ -151,6 +160,7 @@ nav ul :hover {
   .dropdown2 {
     display: block;
     width: 7.5rem;
+    text-align: center;
 
   }
 
@@ -185,6 +195,12 @@ nav ul :hover {
 
   }
 
+.entrySection {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+  justify-content: center;
+  margin-top: 0rem;
+}
 .slogan{
   display: flex;
   justify-content:center;
@@ -196,9 +212,10 @@ nav ul :hover {
   margin-bottom: 0rem;
   font-size: 3rem;
   font-family: 'Archivo Black', sans-serif;
-  color:rgb(40, 26, 91);
+  color: whitesmoke;
   padding: 2rem 0rem 0rem 0rem;
-  text-shadow: 1px 1px 1px #40c1dd;
+  text-shadow: 1px 1px 1px whitesmoke;
+
 }
 .slogan span {
   color: #40c1dd;
@@ -302,7 +319,7 @@ nav ul :hover {
 .virtualization .virtualization-pic{
   display: flex;
   justify-content: center;
-  background-image: url("pics/Virtualization.jpg");
+  background-image: url("pics/virtualization1.png");
   width: 12.5rem;
   height: 12.5rem;
   background-size: cover;
@@ -490,7 +507,7 @@ nav ul :hover {
   text-align: center;
   padding: 0rem 0rem 1rem 0rem;
   grid-column: span 2;
-  color:#041955;
+  color:whitesmoke;
   font-weight: bolder;
   font-size: 1rem;
 }
@@ -561,7 +578,7 @@ nav ul :hover {
   justify-content: center;
   background-color: white; 
   width: 25rem;
-  height: 18rem;
+  height: 21rem;
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
 
 }
@@ -597,7 +614,7 @@ nav ul :hover {
   /* padding: 0rem; */
 
   width: 25rem;
-  height: 18rem;
+  height: 21rem;
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
 }
 .officePic img {
@@ -667,13 +684,14 @@ footer .firstSection {
 }
 
 @media (max-width: 800px ){
-  .top {
-    grid-template-columns: auto;
+  .logo{
+    /* display: none; */
   }
   .navigation{
-    min-width: 23rem ;
+    /* display: flex;
+    width: 60rem; */
   }
-  nav {
+  /* nav {
     display: flex;
     width: 100%;
     align-items: center;
@@ -681,8 +699,11 @@ footer .firstSection {
     margin: 0rem;
   }
   nav ul {
+    display: flex;
+    width: 100%;
     gap: 0.1rem;
-    justify-content: left;
+    width: 100%;
+    justify-content: center;
     height: 2.5rem;
     align-items: center;
     margin-left: 0rem;
@@ -695,11 +716,11 @@ footer .firstSection {
   }
   nav a {
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: bolder;
-    padding: 0.85rem 0.5rem 0.6rem 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
  
-  }
+  } */
   .dropdownMenu {
     display: none;
     grid-template-columns: auto;
@@ -811,6 +832,7 @@ footer .firstSection {
   
   .slogan h1 {
     font-size:1.3rem;
+    text-align: center;
   }
   .services {
     grid-template-columns: auto;

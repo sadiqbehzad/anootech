@@ -21,12 +21,21 @@
   </head>
   <body>
     <!-- <input class="search" type="text" placeholder="Search..." /> -->
-    <div class="top">
-      <div class="logo">
-        <img src="pics/Logo.png" />
-      </div>
-      <section class="navigation">
-        <nav>
+    <div class="logo">
+      <img src="pics/Logo.png" />
+    </div>
+
+    <section class="navigation">
+      <nav>
+        <button class="menuIcon" id="menu" onclick="showDropdown()">&#8801</button>
+        <button>Home</button>
+        <button>About Us</button>
+        <button>Mission</button>
+        <button>Vision</button>
+        <button>FAQs</button>
+        <button>Contact</button>
+      </nav>
+      <!-- <nav>
           <ul>
             <button class="menuIcon" id="menu" onclick="showDropdown()">&#8801</button>
             <li>
@@ -41,138 +50,139 @@
             <li>
               <a href="contact.html">Contact Us</a>
             </li>
-          </ul>
-        </nav>
-        <div class="dropdownMenu" id ="dropdownmenu">
-          <!-- <button class="closeButton" onclick="basta()" type="button" >×</button> -->
-          <div class="dropdown1">
-            <button class="dropdownsBttn" type="button">
-              Solutions <span>&nbsp;⩔</span>
-            </button>
-            <!-- <input class="dropdownsBttn" type="button" value="Solutions ⩔" /> -->
-            <div class="dropdowns-contents">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 4</a>
-              <a href="#">Link 5</a>
-              <a href="#">Link 6</a>
-            </div>
+          </ul> 
+        </nav>-->
+      <div class="dropdownMenu" id="dropdownmenu">
+        <!-- <button class="closeButton" onclick="basta()" type="button" >×</button> -->
+        <div class="dropdown1">
+          <button class="dropdownsBttn" type="button">
+            Solutions <span>&nbsp;⩔</span>
+          </button>
+          <!-- <input class="dropdownsBttn" type="button" value="Solutions ⩔" /> -->
+          <div class="dropdowns-contents">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
           </div>
-          <div class="dropdown2">
-            <button class="dropdownsBttn" type="button">
-              Businesses <span>&nbsp;⩔</span>
-            </button>
-            <div class="dropdowns-contents">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 4</a>
-            </div>
+        </div>
+        <div class="dropdown2">
+          <button class="dropdownsBttn" type="button">
+            Businesses <span>&nbsp;⩔</span>
+          </button>
+          <div class="dropdowns-contents">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
           </div>
-          <div class="dropdown3">
-            <button class="dropdownsBttn" type="button">
-              Government <span>&nbsp;⩔</span>
-            </button>
-            <div class="dropdowns-contents">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 4</a>
-              <a href="#">Link 5</a>
-              <a href="#">Link 6</a>
-            </div>
+        </div>
+        <div class="dropdown3">
+          <button class="dropdownsBttn" type="button">
+            Government <span>&nbsp;⩔</span>
+          </button>
+          <div class="dropdowns-contents">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
           </div>
-          <div class="dropdown4">
-            <button class="dropdownsBttn" type="button">
-              Healthcare <span>&nbsp;⩔</span>
-            </button>
-            <div class="dropdowns-contents">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 4</a>
-              <a href="#">Link 5</a>
-              <a href="#">Link 6</a>
-            </div>
+        </div>
+        <div class="dropdown4">
+          <button class="dropdownsBttn" type="button">
+            Healthcare <span>&nbsp;⩔</span>
+          </button>
+          <div class="dropdowns-contents">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
           </div>
-          <div class="dropdown5">
-            <button class="dropdownsBttn" type="button">
-              Education <span>&nbsp;⩔</span>
-            </button>
-            <div class="dropdowns-contents">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 4</a>
-              <a href="#">Link 5</a>
-              <a href="#">Link 6</a>
-            </div>
+        </div>
+        <div class="dropdown5">
+          <button class="dropdownsBttn" type="button">
+            Education <span>&nbsp;⩔</span>
+          </button>
+          <div class="dropdowns-contents">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="entrySection">
+      <div class="slogan">
+        <h1>
+          Your <span>Digital</span> Success, Our <span>IT</span> Mastery<span
+            >.</span
+          >
+        </h1>
+      </div>
+
+      <section class="services">
+        <div class="it-infra">
+          <div class="managed-ser">
+            <div class="managed-ser-pic"></div>
+          </div>
+          <div class="net-setup">
+            <div class="net-setup-pic"></div>
+          </div>
+          <div class="hw-support">
+            <div class="hw-support-pic"></div>
+          </div>
+          <div class="virtualization">
+            <div class="virtualization-pic"></div>
+          </div>
+          <div class="it-infra-label"><h2>IT Infrastructure Services</h2></div>
+        </div>
+        <div class="dev-sw">
+          <div class="sw-dev">
+            <div class="sw-dev-pic"></div>
+          </div>
+          <div class="web-dev">
+            <div class="web-dev-pic"></div>
+          </div>
+          <div class="database">
+            <div class="database-pic"></div>
+          </div>
+          <div class="data-backup">
+            <div class="data-backup-pic"></div>
+          </div>
+          <div class="dev-sw-label">
+            <h2>Development and Software Services</h2>
+          </div>
+        </div>
+        <div class="sec-consulting">
+          <div class="cyber">
+            <div class="cyber-pic"></div>
+          </div>
+          <div class="cloud">
+            <div class="cloud-pic"></div>
+          </div>
+          <div class="it-consulting">
+            <div class="it-consulting-pic"></div>
+          </div>
+          <div class="helpdesk">
+            <div class="helpdesk-pic"></div>
+          </div>
+          <div class="sec-consulting-label">
+            <h2>Security and Consulting Services</h2>
           </div>
         </div>
       </section>
     </div>
 
-
-    <div class="slogan">
-      <h1>
-        Your <span>Digital</span> Success, Our <span>IT</span> Mastery<span
-          >.</span
-        >
-      </h1>
-    </div>
-
-    <section class="services">
-      <div class="it-infra">
-        <div class="managed-ser">
-          <div class="managed-ser-pic"></div>
-        </div>
-        <div class="net-setup">
-          <div class="net-setup-pic"></div>
-        </div>
-        <div class="hw-support">
-          <div class="hw-support-pic"></div>
-        </div>
-        <div class="virtualization">
-          <div class="virtualization-pic"></div>
-        </div>
-        <div class="it-infra-label"><h2>IT Infrastructure Services</h2></div>
-      </div>
-      <div class="dev-sw">
-        <div class="sw-dev">
-          <div class="sw-dev-pic"></div>
-        </div>
-        <div class="web-dev">
-          <div class="web-dev-pic"></div>
-        </div>
-        <div class="database">
-          <div class="database-pic"></div>
-        </div>
-        <div class="data-backup">
-          <div class="data-backup-pic"></div>
-        </div>
-        <div class="dev-sw-label">
-          <h2>Development and Software Services</h2>
-        </div>
-      </div>
-      <div class="sec-consulting">
-        <div class="cyber">
-          <div class="cyber-pic"></div>
-        </div>
-        <div class="cloud">
-          <div class="cloud-pic"></div>
-        </div>
-        <div class="it-consulting">
-          <div class="it-consulting-pic"></div>
-        </div>
-        <div class="helpdesk">
-          <div class="helpdesk-pic"></div>
-        </div>
-        <div class="sec-consulting-label">
-          <h2>Security and Consulting Services</h2>
-        </div>
-      </div>
-    </section>
     <footer class="footer">
       <div class="firstSection">
         <img src="pics/Logo.png" alt="Logo" />
@@ -196,6 +206,5 @@
         <p>Copyright &copy 2023 Anoo Technologies. All rights reserved.</p>
       </div>
     </footer>
-    
   </body>
 </html>
