@@ -12,6 +12,7 @@ html, body{
   grid-template-columns: 0.4fr auto;
   column-gap: 0rem;
   width: 90%;
+  z-index: 2;
   /* padding: 0rem 0rem 0rem 0rem;   */
 
 
@@ -214,6 +215,7 @@ nav ul :hover {
   margin-top: 0rem;
   margin-bottom: 0;
   row-gap: 0rem;
+  
 }
 
 .services .it-infra, .dev-sw, .sec-consulting {
@@ -719,21 +721,56 @@ footer .firstSection {
     border-bottom-left-radius: 0px;
     background-color: #333;
 
+  }
+  .dropdown2:hover .dropdowns-contents{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 8.75rem;
+    margin-top: -1.35rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #333;
 
   }
-  .dropdowns-contents a :hover {
+  .dropdown3:hover .dropdowns-contents{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 8.75rem;
+    margin-top: -1.35rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #333;
+
+  }
+  .dropdown4:hover .dropdowns-contents{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 8.75rem;
+    margin-top: -1.35rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #333;
+
+  }
+  .dropdown5:hover .dropdowns-contents{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 8.75rem;
+    margin-top: -1.35rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #333;
+
+  }
+  .dropdowns-contents :hover {
     color: white;
     font-size: 0.9rem;
     font-weight: bolder;
     padding: 0.5rem 0rem 0.5rem 0.5rem;
-    gap: 0.7rem;
     border-radius: 0rem;
-  }
-  /* .dropdowns-contents a :hover {
-    background-color:red;
- 
 
-  } */
+  }
+  
   .slogan h1 {
     font-size:1.3rem;
   }
