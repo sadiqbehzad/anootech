@@ -1,7 +1,7 @@
 html, body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin-top: 0rem;
     font-family: 'Nunito', sans-serif;
 
@@ -504,67 +504,105 @@ nav ul :hover {
 
 
 .gradient-section {
+  display: flex;
+  justify-content: center;
   background-color:#041955;
   background-image: linear-gradient(#041955, #40c1dd);
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 
-
+  width: 100%;
 }
 .gradient-contents {
   display: grid;
   grid-template-rows: .75fr 1fr;
-  margin-left: auto;
-  margin-right: auto;
+  padding:4rem 0rem 4rem 0rem;
   width: 100%;
+ 
 }
 .firstSection {
   display: grid;
-  grid-template-columns: .75fr 1fr;
-  gap: 6rem;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  padding:4rem 2rem 1rem 2rem;
+
+}
+.firstSection .title {
+  display: flex;
+  justify-content: center;
   color: white;
   font-family: 'Archivo Black', sans-serif;
-  padding:4rem 4rem 1rem 4rem;
+  text-align: left;
+  font-size: 2rem;
+
 }
-.firstSection p {
+.firstSection .body {
+  display: flex;
+  justify-content: center;
   font-family: 'Nunito', sans-serif; 
-  font-size: 1.3rem;
+  font-size: 1rem;
+  color: white;
 }
 .secondSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding:1rem 4rem 3rem 4rem;
-  gap: 1rem;
+  padding:0rem 2rem 1rem 2rem;
+  gap: 2rem;
+  /* overflow: hidden; */
+  
 }
 .secondSection a {
   text-decoration: none; 
-  color: black;
+
 }
-.secondSection h3 {
+.solutions, .aboutus {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  row-gap: 0rem;
+  justify-content: center;
+  background-color: white; 
+  width: 25rem;
+  height: 18rem;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+
+}
+
+.solutions-h3, .aboutus-h3{
+
+  color: black;
   font-family: 'Archivo Black', sans-serif;
-  color: rgb(40, 26, 91);          
+  text-align: left;
+  font-size: 1rem;
+  padding: 3rem 3rem 0rem 3rem;
+  align-items: center;
+
+
 }
 .secondSection span {
-  margin-left: 15rem;
+  margin-left: 12rem;
 }
-.secondSection .solutions {
-  background-color: white; 
-  padding: 2rem;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+.solutions-p, .aboutus-p {
+
+  font-family: 'Nunito', sans-serif; 
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  padding: 2rem 3rem 3rem 3rem;
+
 }
-.secondSection .aboutus {
-  background-color: white; 
-  padding: 2rem;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-}
+
+
 .secondSection .officePic {
-  background-color: white;
-  padding: 2rem;
-  background-image: url('pics/office.jpg');
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /* padding: 0rem; */
+
+  width: 25rem;
+  height: 18rem;
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-            
+}
+.officePic img {
+  width: 100%;
+  object-fit:cover;
 }
 .secondSection :hover {
   background-color: beige;
@@ -847,5 +885,25 @@ footer .firstSection {
   .it-infra-label, .dev-sw-label, .sec-consulting-label {
     font-size: 0.6rem;
     word-break: break-all;
+  }
+  .gradient-section {
+    min-width: 23rem ;
+    /* height: 80rem; */
+  }
+  .firstSection {
+    grid-template-columns: 1fr;
+    /* gap: 1rem; */
+    padding:1rem 4rem 2rem 4rem;
+  }
+  .firstSection h1 {
+    font-size: 1.5rem;
+    padding: 0;
+    height: 4rem;
+  }
+  .secondSection {
+
+    grid-template-columns: 1fr;
+    padding:0rem 4rem 0rem 4rem;
+    gap: 1rem;
   }
 }
