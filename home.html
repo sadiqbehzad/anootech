@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="test2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,110 +17,60 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ultra&display=swap"
       rel="stylesheet"
     />
-    <script src="index.js"></script>
+    <script src="test2.js"></script>
   </head>
   <body>
-    <!-- <input class="search" type="text" placeholder="Search..." /> -->
-    <div class="logo">
-      <img src="pics/Logo.png" />
-    </div>
-
     <section class="navigation">
-      <nav>
-        <button class="menuIcon" id="menu" onclick="showDropdown()">&#8801</button>
-        <button>Home</button>
-        <button>About Us</button>
-        <button>Mission</button>
-        <button>Vision</button>
-        <button>FAQs</button>
-        <button>Contact</button>
-      </nav>
-      <!-- <nav>
-          <ul>
-            <button class="menuIcon" id="menu" onclick="showDropdown()">&#8801</button>
-            <li>
-              <a href="Home.html">Home</a>
-            </li>
-            <li>
-              <a href="aboutUs.html">About Us</a>
-            </li>
-            <li><a href="mission.html">Mission</a></li>
-            <li><a href="vision.html">Vision</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul> 
-        </nav>-->
-      <div class="dropdownMenu" id="dropdownmenu">
-        <!-- <button class="closeButton" onclick="basta()" type="button" >×</button> -->
-        <div class="dropdown1">
-          <button class="dropdownsBttn" type="button">
-            Solutions <span>&nbsp;⩔</span>
-          </button>
-          <!-- <input class="dropdownsBttn" type="button" value="Solutions ⩔" /> -->
-          <div class="dropdowns-contents">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-          </div>
+        <button type="button">Home</button>
+        <button type="button">About Us</button>
+        <button type="button">Mission</button>
+        <button type="button">Vision</button>
+        <button type="button">FAQs</button>
+        <button type="button">Contact</button>
+        <div class="drp-dwn-bttn">
+          <button type="button" id="drp-dwn-bttn" onmouseover="showDropdown('drp-dwn-cont')">Solutions&nbsp;&nbsp;&nbsp;⩔</button>
+          <nav class="dropdowns-contents" id="drp-dwn-cont" onmouseout="hideDropdown('drp-dwn-cont')">
+            <div class="it-infras">
+              <h3>IT Infrastructure Services</h3>
+              <ul class="servicesList">
+                <a href="#"><li>IT Managed Services</li></a>
+                <a href="#"><li>Network Setup and Management</li></a>
+                <a href="#"><li>Hardware Support and Maintenance</li></a>
+                <a href="#"><li>Virtualization Services</li></a>
+              </ul>
+            </div>
+            <div class="dev-and-sw">
+              <h3>Development and Software Services</h3>
+              <ul class="servicesList">
+                <a href="#"><li>Software Development</li></a>
+                <a href="#"><li>Web Development and Design</li></a>
+                <a href="#"><li>Database Management</li></a>
+                <a href="#"><li>Data Backup and Recovery</li></a>
+              </ul>
+            </div>
+            <div class="sec-and-consult">
+              <h3>Security and Consulting Services</h3>
+              <ul class="servicesList">
+                <a href="#"><li>Cyber Security Services</li></a>
+                <a href="#"><li>Cloud Services</li></a>
+                <a href="#"><li>IT Consulting</li></a>
+                <a href="#"><li>Helpdesk and Technical Support</li></a>
+              </ul>
+            </div>
+
+
+
+          </nav>
         </div>
-        <div class="dropdown2">
-          <button class="dropdownsBttn" type="button">
-            Businesses <span>&nbsp;⩔</span>
-          </button>
-          <div class="dropdowns-contents">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-          </div>
-        </div>
-        <div class="dropdown3">
-          <button class="dropdownsBttn" type="button">
-            Government <span>&nbsp;⩔</span>
-          </button>
-          <div class="dropdowns-contents">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-          </div>
-        </div>
-        <div class="dropdown4">
-          <button class="dropdownsBttn" type="button">
-            Healthcare <span>&nbsp;⩔</span>
-          </button>
-          <div class="dropdowns-contents">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-          </div>
-        </div>
-        <div class="dropdown5">
-          <button class="dropdownsBttn" type="button">
-            Education <span>&nbsp;⩔</span>
-          </button>
-          <div class="dropdowns-contents">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-          </div>
-        </div>
+        
+      <div class="menuIcon">
+        <button id="menu" onclick="showDropdown()">&#8801</button>
       </div>
     </section>
 
+    <div class="logo">
+      <img src="pics/Logo.png" />
+    </div>
     <div class="entrySection">
       <div class="slogan">
         <h1>
@@ -129,61 +79,119 @@
           >
         </h1>
       </div>
-
-      <section class="services">
+      <div class="solutions">
         <div class="it-infra">
           <div class="managed-ser">
-            <div class="managed-ser-pic"></div>
+            <img
+              src="pics/ManagedIT.jpg"
+              id="pic1-1"
+              onmouseover="changePic(id,'src','pics/managed-ser.png')"
+              onmouseout="restorePic(id, 'src','pics/ManagedIT.jpg')"
+            />
           </div>
           <div class="net-setup">
-            <div class="net-setup-pic"></div>
+            <img
+              src="pics/Network.jpg"
+              id="pic1-2"
+              onmouseover="changePic(id,'src','pics/net-setup.png')"
+              onmouseout="restorePic(id, 'src','pics/Network.jpg')"
+            />
           </div>
           <div class="hw-support">
-            <div class="hw-support-pic"></div>
+            <img
+              src="pics/HardwareSupport.jpg"
+              id="pic1-3"
+              onmouseover="changePic(id,'src','pics/hw-support.png')"
+              onmouseout="restorePic(id, 'src','pics/HardwareSupport.jpg')"
+            />
           </div>
           <div class="virtualization">
-            <div class="virtualization-pic"></div>
+            <img
+              src="pics/virtualization1.png"
+              id="pic1-4"
+              onmouseover="changePic(id,'src','pics/virtualization.png')"
+              onmouseout="restorePic(id, 'src','pics/virtualization1.png')"
+            />
           </div>
-          <div class="it-infra-label"><h2>IT Infrastructure Services</h2></div>
+          <div class="it-infra-label">IT Infrastructure Services</div>
         </div>
         <div class="dev-sw">
           <div class="sw-dev">
-            <div class="sw-dev-pic"></div>
+            <img
+              src="pics/SoftwareDev.jpg"
+              id="pic2-1"
+              onmouseover="changePic(id,'src','pics/sw-dev.png')"
+              onmouseout="restorePic(id, 'src','pics/SoftwareDev.jpg')"
+            />
           </div>
           <div class="web-dev">
-            <div class="web-dev-pic"></div>
+            <img
+              src="pics/WebDev.png"
+              id="pic2-2"
+              onmouseover="changePic(id,'src','pics/web-dev.png')"
+              onmouseout="restorePic(id, 'src','pics/WebDev.png')"
+            />
           </div>
           <div class="database">
-            <div class="database-pic"></div>
+            <img
+              src="pics/Database.jpg"
+              id="pic2-3"
+              onmouseover="changePic(id,'src','pics/database.png')"
+              onmouseout="restorePic(id, 'src','pics/Database.jpg')"
+            />
           </div>
           <div class="data-backup">
-            <div class="data-backup-pic"></div>
+            <img
+              src="pics/databkup.jpg"
+              id="pic2-4"
+              onmouseover="changePic(id,'src','pics/data-backup.png')"
+              onmouseout="restorePic(id, 'src','pics/databkup.jpg')"
+            />
           </div>
-          <div class="dev-sw-label">
-            <h2>Development and Software Services</h2>
-          </div>
+          <div class="dev-sw-label">Development and Software Services</div>
         </div>
-        <div class="sec-consulting">
-          <div class="cyber">
-            <div class="cyber-pic"></div>
+        <div class="sec-consult">
+          <div class="cyber-sec">
+            <img
+              src="pics/cybersec.jpeg"
+              id="pic3-1"
+              onmouseover="changePic(id,'src','pics/cyber-sec.png')"
+              onmouseout="restorePic(id, 'src','pics/cybersec.jpeg')"
+            />
           </div>
           <div class="cloud">
-            <div class="cloud-pic"></div>
+            <img
+              src="pics/cloud.jpg"
+              id="pic3-2"
+              onmouseover="changePic(id,'src','pics/cloud-ser.png')"
+              onmouseout="restorePic(id, 'src','pics/cloud.jpg')"
+            />
           </div>
-          <div class="it-consulting">
-            <div class="it-consulting-pic"></div>
+          <div class="it-consult">
+            <img
+              src="pics/ITConsulting.jpeg"
+              id="pic3-3"
+              onmouseover="changePic(id,'src','pics/it-consulting.png')"
+              onmouseout="restorePic(id, 'src','pics/ITConsulting.jpeg')"
+            />
           </div>
           <div class="helpdesk">
-            <div class="helpdesk-pic"></div>
+            <img
+              src="pics/helpdesk.jpg"
+              id="pic3-4"
+              onmouseover="changePic(id,'src','pics/helpdesk.png')"
+              onmouseout="restorePic(id, 'src','pics/helpdesk.jpg')"
+            />
           </div>
-          <div class="sec-consulting-label">
-            <h2>Security and Consulting Services</h2>
-          </div>
+          <div class="sec-consult-label">Security and Consulting Services</div>
         </div>
-      </section>
+      </div>
     </div>
+        
+        
 
-    <footer class="footer">
+    
+    <!-- <footer class="footer">
       <div class="firstSection">
         <img src="pics/Logo.png" alt="Logo" />
         <div>
@@ -205,6 +213,6 @@
       <div class="copyright">
         <p>Copyright &copy 2023 Anoo Technologies. All rights reserved.</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
