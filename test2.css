@@ -205,8 +205,8 @@ html, body {
   }
 .gradient-contents {
     display: grid;
-    grid-template-rows: .75fr 1fr;
-    padding: 3vw 2vw 3vw 2vw;
+    grid-template-rows: auto auto;
+    padding: 4vw 4vw 4vw 4vw;
     border: 1px solid yellow;
 }
 
@@ -214,6 +214,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 1px solid yellow;
+    margin-bottom: 3vw;
 
 }
 .firstSection .header-h {
@@ -221,18 +222,20 @@ html, body {
     justify-content: center;
     color: white;
     font-family: 'Archivo Black', sans-serif;
-    text-align: left;
+    /* text-align: left; */
     font-size: 2vw;
     border: 1px solid yellow;
+    align-items: center;
   
   }
 .firstSection .paragraph {
     display: flex;
     justify-content: center;
     font-family: 'Nunito', sans-serif; 
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: white;
     border: 1px solid yellow;
+    align-items: center;
 }
 .secondSection {
     display: grid;
@@ -248,13 +251,14 @@ html, body {
 .solutions, .aboutus {
     display: grid;
     grid-template-columns: auto;
-    justify-content:space-evenly;
+    justify-content:center;
     background-color: white; 
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
     border: 1px solid yellow;
+    height: 30vw;
 
 }
-.h-title {
+.h-title{
     display: flex;
     justify-content: space-between;
     color: black;
@@ -266,19 +270,20 @@ html, body {
     padding: 0;
     
 }
-.p-body {
+.p-body{
     display: flex;
     justify-content: space-between;
     font-family: 'Nunito', sans-serif; 
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: black;
     border: 1px solid yellow;
-    height: 10vw;
-    padding: 0;
+    height: 20vw;
+
 }
-.secondSection span {
-    /* margin-left: 12vw; */
-  }
+.p-body p {
+    margin: 0;
+    padding-bottom: 1vw;
+}
 
 .secondSection .officePic {
   display: flex;
