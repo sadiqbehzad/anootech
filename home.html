@@ -20,7 +20,7 @@
     <script src="test2.js"></script>
   </head>
   <body>
-    <section class="navigation">
+    <section class="navigation" id="navigate">
         <button type="button">Home</button>
         <button type="button">About Us</button>
         <button type="button">Mission</button>
@@ -63,11 +63,11 @@
           </nav>
         </div>
         
-      <div class="menuIcon">
-        <button id="menu" onclick="showDropdown()">&#8801</button>
-      </div>
+      
     </section>
-
+    <div class="menuIcon">
+      <button id="menu" onclick="showHideMenu('navigate')">&#8801</button>
+    </div>
     <div class="logo">
       <img src="pics/Logo.png" />
     </div>

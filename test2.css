@@ -4,12 +4,23 @@ html, body {
     background-color: #1e1e1e;
     
 }
-
+.logo {
+    display: block;
+    position:absolute;
+    width: 15%;
+    z-index: 2;
+    top: 0%;
+}
+.logo img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
 .navigation {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     justify-content: center;
-    background-color: #303030;
+    /* background-color: #303030; */
     gap: 3%;
     height: 3vw;
 
@@ -23,30 +34,35 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 1vw;
+    font-size: 2vmin;
     color: #333;
     font-family: 'Nunito', sans-serif;
+    background-color: transparent;
+    border: 0px;
+    cursor:pointer;
+    padding: 0rem;
+    color: whitesmoke;
+
+}
+
+.menuIcon {
+    display: none;
+    justify-content: right;
+    padding: 1rem 2rem 0rem 1rem;
+
+}
+.menuIcon button{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 5vw;
     background-color: transparent;
     border: 0px;
     cursor:pointer;
     padding: 0rem;
     color: whitesmoke;
 }
-
-.menuIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3vw;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1vw;
-    color: #333;
-    background-color: transparent;
-    border: 0px;
-    cursor:pointer;
-    padding: 0rem;
-    color: whitesmoke;
-
+.menuIcon :hover {
+    color:#40c1dd;
 }
 .navigation :hover {
     font-weight: bolder;
@@ -72,6 +88,8 @@ html, body {
     font-family: 'Nunito', sans-serif;
     font-size: 1vw;
     left: 0%;
+    z-index: 10;
+
 
 }
 
@@ -80,6 +98,7 @@ html, body {
     grid-template-columns: auto;
     justify-content: left;
     padding: 2rem;
+
 
 }
 
@@ -95,33 +114,28 @@ html, body {
     color: #40c1dd;
 }
 
-/* .dropdowns-contents :hover {
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
-    background-color: #04AA6D;
-    border-radius: 1rem;
 
-} */
   
 
 .entrySection {
     display: grid;
-    grid-template-rows: 0.7fr 1fr;
+    grid-template-columns: auto;
     width: 100%;
 
 }
 .slogan {
     display: flex;
-    padding: 0rem 2rem 0rem 2rem;
+    margin-top: 4rem;
+    padding: 0rem 2rem 2rem 2rem;
     justify-content: center;
-    align-items: center;
+    /* align-items: top; */
 }
 .slogan h1 {
     margin-bottom: 0rem;
     font-size: 3vw;
     font-family: 'Archivo Black', sans-serif;
     color: whitesmoke;
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
     text-shadow: 1px 1px 1px whitesmoke;
   
   }
@@ -142,6 +156,8 @@ html, body {
 .it-infra, .dev-sw, .sec-consult {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
     /* grid-row: auto; */
     gap: 0.9%;
     
@@ -171,9 +187,68 @@ html, body {
     justify-content: center;
     grid-column: span 2;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
+    font-weight: bold;
     color: white;
     text-align: center;
-    /* padding-top: 4rem; */
+    padding-top: 5%;
     
+}
+
+@media (max-width: 850px) {
+    .logo {
+        width: 15%;
+    }
+    .navigation {
+        display: none;
+        grid-template-columns: auto;
+        position: absolute;
+        right: 0%;
+        justify-content: right;
+        background-color: transparent;
+        width: 100%;
+        z-index: 10;
+        margin-top: 8vw;
+
+    }
+    .navigation button, .drp-dwn-bttn button {
+        font-size: 2vw;
+        justify-content: right;
+
+    }
+    .dropdowns-contents {
+        
+        margin-top: 5vw;
+        right: 0%;
+        font-size: 2vw;
+
+    }
+    .navigation button, .drp-dwn-bttn button {
+        padding: 1rem 2rem 0rem 0rem;
+    }
+    .dropdowns-contents a {
+        font-size: 1.7vw;
+        line-height: 3vw;
+    }
+    .slogan {
+        margin-top: 1rem;
+    }
+    .solutions {
+        grid-template-columns: auto;
+        width: 50%;
+        margin: auto;
+    }
+    .it-infra-label, .dev-sw-label, .sec-consult-label{
+
+        font-size: 2.7vw;
+        padding-bottom: 4vw;
+        
+        
+    }
+    
+ 
+    .menuIcon {
+        display: flex;
+
+    }
 }
