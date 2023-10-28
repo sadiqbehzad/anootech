@@ -530,68 +530,17 @@ nav ul :hover {
 }
 
 
-.gradient-section {
-  display: flex;
-  justify-content: center;
-  background-color:#041955;
-  background-image: linear-gradient(#041955, #40c1dd);
-  align-items: center;
 
-  width: 100%;
-}
-.gradient-contents {
-  display: grid;
-  grid-template-rows: .75fr 1fr;
-  padding:4rem 0rem 4rem 0rem;
-  width: 100%;
- 
-}
+
 .firstSection {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 3rem;
-  padding:4rem 2rem 1rem 2rem;
 
 }
-.firstSection .title {
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-family: 'Archivo Black', sans-serif;
-  text-align: left;
-  font-size: 2rem;
 
-}
-.firstSection .body {
-  display: flex;
-  justify-content: center;
-  font-family: 'Nunito', sans-serif; 
-  font-size: 1rem;
-  color: white;
-}
-.secondSection {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding:0rem 2rem 1rem 2rem;
-  gap: 2rem;
-  /* overflow: hidden; */
-  
-}
-.secondSection a {
-  text-decoration: none; 
 
-}
-.solutions, .aboutus {
-  display: grid;
-  grid-template-rows: 0.3fr 1fr;
-  row-gap: 0rem;
-  justify-content: center;
-  background-color: white; 
-  width: 25rem;
-  height: 21rem;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
 
-}
+
 
 .solutions-h3, .aboutus-h3{
 
@@ -604,9 +553,7 @@ nav ul :hover {
 
 
 }
-.secondSection span {
-  margin-left: 12rem;
-}
+
 .solutions-p, .aboutus-p {
 
   font-family: 'Nunito', sans-serif; 
@@ -618,19 +565,7 @@ nav ul :hover {
 }
 
 
-.secondSection .officePic {
-  display: flex;
-  justify-content: center;
-  /* padding: 0rem; */
 
-  width: 25rem;
-  height: 21rem;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-}
-.officePic img {
-  width: 100%;
-  object-fit:cover;
-}
 .secondSection :hover {
   background-color: beige;
 }

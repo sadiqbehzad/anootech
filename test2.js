@@ -22,12 +22,6 @@ function showMenu(id) {
 function hideMenu(id) {
   document.getElementById(id).style.cssText = "display: none";
 }
-function basta() {
-  console.log("Hi, this is CLOSE function");
-  document.getElementById("navigate").style.cssText = "display:none";
-  let dropdownm = document.getElementById("dropdownmenu");
-  dropdownm.removeChild(dropdownm.firstElementChild);
-}
 
 window.addEventListener("resize", function () {
   "use strict";
