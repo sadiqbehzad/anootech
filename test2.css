@@ -89,7 +89,7 @@ html, body {
     font-family: 'Nunito', sans-serif;
     font-size: 1vw;
     left: 0%;
-    z-index: 10;
+    z-index: 20;
 
 
 }
@@ -115,10 +115,110 @@ html, body {
     color: #40c1dd;
 }
 
+
 .blocks-animation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
+    
+    
+}
+.blocks-contents {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    width: 100%;
+    padding-top: 20vw;
+    padding-bottom: 15vw;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, transparent, white 80%);
+    padding-left: 3vw;
+}
+.block-list {
+    position: relative;
+    transform: skewY(-15deg);
+    transform: rotateZ(45deg);
+    margin: 0;
+    padding:0;
+}
+
+.block-list li {
+    position: relative;
+    list-style: none;
+    width: 25vw;
+    padding: 0.2rem;
+    background-color: #3091a6;
+    z-index: calc(1 * var(--i));
+    transition: 0.5s;
+    padding: 1vw;
+    border-left: 0.5px solid whitesmoke;
+
+
+}
+
+.block-list li:hover {
+    background: rgb(64, 193, 221);
+    transform: translateX(-50px);
+
+}
+
+.block-list li::before {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-icon);
+    position: absolute;
+    top: 0;
+    left: -3vw;
+    width: 3vw;
+    height: 100%;
+    background-color: #3091a6;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    font-size: 1.3vw;
+
+}
+
+.block-list li:hover::before {
+    background: #3091a6;
+    font-weight: bolder;
+}
+
+.block-list li::after {
+    content: "";
+    position: absolute;
+    top:-3vw;
+    left: 0;
+    width: 100%;
+    height: 3vw;
+    background-color: #3091a6;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+    border-bottom: 0.2px solid whitesmoke;
+    border-left: 0.2px solid whitesmoke;
+}
+.block-list li:hover::after {
+    background: rgba(64, 193, 221,0.8);
+}
+
+.block-list li a {
+    text-decoration: none;
+    color: whitesmoke;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.08vw;
+    transition: 0.5s;
+    font-size: 1.3vw;
+}
+
+/* .block-list li:hover a {
+    font-weight: bolder;
+} */
+.block-list li:last-child::after {
+    box-shadow: -5vw 7vw 1vw rgba(0,0,0,0.25);
 }
 
 
@@ -441,6 +541,28 @@ footer {
         font-size: 1.7vw;
         line-height: 3vw;
     }
+
+    .blocks-contents {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 10vw;
+        padding-top: 10vw;
+    }
+    .block-list {
+        transform: rotateZ(0deg);
+    }
+    .block-list li {
+        width: 55vw;
+    }
+    .block-list li a {
+        font-size: 3vw;
+    }
+    .block-list li:last-child::after {
+        box-shadow: -10vw 10vw 1vw rgba(0,0,0,0.25);
+    }
+
+
     .slogan {
         margin-top: 1rem;
     }
