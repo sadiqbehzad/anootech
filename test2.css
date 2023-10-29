@@ -286,7 +286,7 @@ html, body {
     font-family: 'Nunito', sans-serif; 
     font-size: 1.3vw;
     color: black;
-    height: 20vw;
+    height: 15vw;
     text-align: justify;
 
 }
@@ -358,6 +358,7 @@ html, body {
         grid-template-columns: auto;
         width: 70%;
         margin-bottom: 7vw;
+        padding-top: 8vw;
 
     }
     .firstSection {
@@ -379,13 +380,12 @@ html, body {
         /* height: 60vw; */
         align-items:baseline;
     }
-    .p-body{
-        font-size: 3vw;
-        margin-top: 2vw;
-    }
     .h-title{
-        font-size: 3vw;
-        margin-top: 0;
+        font-size: 2.5vw;
+    }
+    .p-body{
+        font-size: 2.5vw;
+        margin-top: 8vw;
     }
     .menuIcon {
         display: flex;
