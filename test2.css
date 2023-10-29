@@ -304,10 +304,78 @@ html, body {
   object-fit:cover;
 }
 
+footer {
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+    row-gap: 0;
+    background-color: #041a55;
+    bottom: 0;
+    font-family: 'Nunito', sans-serif; 
+    color: whitesmoke;
+    
+}
+.footer-contents {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 5%;
+}
+.second-part, .third-part {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+.IT-Solutions-h2 h2, .mission-vision h2, .contact-us-h2 h2 {
+    font-size: 1.3vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.IT-Solutions {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10%;
+}
+.IT-Solutions a {
+    font-size: 1vw;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0;
+}
+.mission-vision a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.IT-Solutions :hover, .mission-vision a :hover {
+    font-weight: bolder;
+    color: #40c1dd;
+}
+.contact-us-p p {
+    font-size: 0.9vw;
+}
 
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 1vw;
+    
+}
+.footer-logo img {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+    /* object-fit:fill; */
+}
 
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9vw;
+    border-top: 1px solid rgb(76, 75, 75);
 
-@media (max-width: 850px) {
+}
+
+@media (max-width: 840px) {
     .logo {
         width: 15%;
     }
