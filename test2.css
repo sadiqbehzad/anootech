@@ -128,12 +128,14 @@ html, body {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
-    padding-top: 20vw;
+    padding-top: 15vw;
     padding-bottom: 15vw;
     align-items: center;
     overflow: hidden;
     background-image: linear-gradient(to bottom, transparent, white 80%);
     padding-left: 3vw;
+    gap: 0;
+    justify-content: space-around;
 }
 .block-list {
     position: relative;
@@ -142,12 +144,22 @@ html, body {
     margin: 0;
     padding:0;
 }
+.block-list .lbl {
+    padding-bottom: 3.5vw;
+    margin-left: -2vw;
+    font-size: 1.5vw;
+    
+    font-family: 'Archivo Black', sans-serif;
+    color: black;
+    -webkit-text-stroke: 1px #3091a6;
+    
 
+}
 .block-list li {
     position: relative;
     list-style: none;
     width: 25vw;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
     background-color: #3091a6;
     z-index: calc(1 * var(--i));
     transition: 0.5s;
@@ -219,6 +231,7 @@ html, body {
 } */
 .block-list li:last-child::after {
     box-shadow: -5vw 7vw 1vw rgba(0,0,0,0.25);
+    z-index: 10;
 }
 
 
@@ -546,11 +559,16 @@ footer {
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
-        gap: 10vw;
+        gap: 8vw;
         padding-top: 10vw;
     }
     .block-list {
         transform: rotateZ(0deg);
+    }
+    .block-list .lbl {
+        font-size: 2.8vw;
+        color: black;
+        -webkit-text-stroke: 0.1vw whitesmoke;
     }
     .block-list li {
         width: 55vw;
