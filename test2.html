@@ -16,8 +16,36 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="test2.css" />
+    <!-- <link rel="stylesheet" href="test2.css" /> -->
     <script src="test2.js"></script>
   </head>
-  <body></body>
+  <style>
+    .animated-sentence {
+      white-space: nowrap; /* Prevent words from wrapping to a new line */
+      overflow: hidden; /* Hide overflow content */
+    }
+
+    .animated-sentence span {
+      display: inline-block; /* Make spans display in-line horizontally */
+      opacity: 0; /* Start with words hidden */
+      transform: translateX(
+        -100%
+      ); /* Start position outside of the container */
+      animation: appear 2s forwards; /* Apply the "appear" animation */
+      animation-delay: 0.5s; /* Delay for the second word */
+    }
+
+    @keyframes appear {
+      to {
+        opacity: 1; /* Make words fully visible */
+        transform: translateX(0); /* Move words to their original position */
+      }
+    }
+  </style>
+  <body>
+    <div class="animated-sentence">
+      <span>Hello,</span>
+      <span>world!</span>
+    </div>
+  </body>
 </html>

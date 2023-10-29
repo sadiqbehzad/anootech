@@ -557,10 +557,12 @@ nav ul :hover {
 .solutions-p, .aboutus-p {
 
   font-family: 'Nunito', sans-serif; 
-  font-size: 1rem;
+  font-size: 1vw;
   color: black;
   text-align: left;
   padding: 2rem 3rem 3rem 3rem;
+  text-wrap:nowrap;
+  overflow: hidden;
 
 }
 

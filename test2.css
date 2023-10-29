@@ -10,6 +10,7 @@ html, body {
     width: 15%;
     z-index: 2;
     top: 0%;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
 }
 .logo img {
     display: block;
@@ -121,6 +122,7 @@ html, body {
     display: grid;
     grid-template-columns: auto;
     width: 100%;
+    margin-bottom: 7vw;
 
 }
 .slogan {
@@ -202,30 +204,30 @@ html, body {
     background-image: linear-gradient(#041955, #40c1dd);
     align-items: center;
     width: 100%;
+    padding: 
   }
 .gradient-contents {
     display: grid;
     grid-template-rows: auto auto;
     padding: 4vw 4vw 4vw 4vw;
-    border: 1px solid yellow;
+    width: 100%;
 }
 
 .firstSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid yellow;
     margin-bottom: 3vw;
+    gap: 2vw;
 
 }
 .firstSection .header-h {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     color: white;
     font-family: 'Archivo Black', sans-serif;
-    /* text-align: left; */
     font-size: 2vw;
-    border: 1px solid yellow;
     align-items: center;
+
   
   }
 .firstSection .paragraph {
@@ -234,28 +236,33 @@ html, body {
     font-family: 'Nunito', sans-serif; 
     font-size: 1.5vw;
     color: white;
-    border: 1px solid yellow;
     align-items: center;
+    text-align: justify;
 }
 .secondSection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     gap: 2%;
-    border: 1px solid yellow;
+
+
   }
 .secondSection a {
   text-decoration: none; 
 
 }
-.solutions, .aboutus {
+.secondSection :hover {
+    background-color: beige;
+}
+.boxes {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-rows: 0.4fr 1fr;
+    gap: 0%;
     justify-content:center;
     background-color: white; 
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
-    border: 1px solid yellow;
-    height: 30vw;
+    padding: 4rem 3rem 4rem 3rem;
+    align-items: center;
 
 }
 .h-title{
@@ -265,10 +272,13 @@ html, body {
     font-family: 'Archivo Black', sans-serif;
     text-align: left;
     font-size: 1vw;
-    border: 1px solid yellow;
+    color: #041955;
     height: 5vw;
-    padding: 0;
+
     
+}
+.h-title h2 {
+    margin: 0;
 }
 .p-body{
     display: flex;
@@ -276,13 +286,12 @@ html, body {
     font-family: 'Nunito', sans-serif; 
     font-size: 1.3vw;
     color: black;
-    border: 1px solid yellow;
     height: 20vw;
+    text-align: justify;
 
 }
 .p-body p {
     margin: 0;
-    padding-bottom: 1vw;
 }
 
 .secondSection .officePic {
@@ -342,14 +351,42 @@ html, body {
         margin: auto;
     }
     .it-infra-label, .dev-sw-label, .sec-consult-label{
-
         font-size: 2.7vw;
-        padding-bottom: 4vw;
-        
-        
+        padding-bottom: 4vw;  
     }
-    
- 
+    .gradient-contents {
+        grid-template-columns: auto;
+        width: 70%;
+        margin-bottom: 7vw;
+
+    }
+    .firstSection {
+        grid-template-columns: auto;
+    }
+    .firstSection .header-h {
+        font-size: 4vw;
+
+    }
+    .firstSection .paragraph {
+        font-size: 3vw;
+
+    }
+
+    .secondSection {
+        grid-template-columns: auto;
+    }
+    .boxes {
+        /* height: 60vw; */
+        align-items:baseline;
+    }
+    .p-body{
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+    .h-title{
+        font-size: 3vw;
+        margin-top: 0;
+    }
     .menuIcon {
         display: flex;
 
