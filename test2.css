@@ -115,9 +115,45 @@ html, body {
     color: #40c1dd;
 }
 
+.hero {
+    width: 100%;
+    height: 500px;
+    background-image: url("pics/office.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero > h1 {
+    font-size: 3vw;
+    font-family: 'Archivo Black', sans-serif;
+    color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; 
+    top: 0;
+    padding: 3rem;
+    background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.7) 70%,rgba(0,0,0,0.4) 80%,rgba(0,0,0,0) 100%);
 
-  
 
+}
+
+.main-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+
+
+}
+.photo-gradient {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, black, transparent);
+    position: absolute;
+    /* top:0;
+    left:0; */
+}
 .entrySection {
     display: grid;
     grid-template-columns: auto;
@@ -234,7 +270,7 @@ html, body {
     display: flex;
     justify-content: center;
     font-family: 'Nunito', sans-serif; 
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: white;
     align-items: center;
     text-align: justify;
@@ -284,7 +320,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     font-family: 'Nunito', sans-serif; 
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     color: black;
     height: 15vw;
     text-align: justify;
@@ -459,4 +495,5 @@ footer {
         display: flex;
 
     }
+    
 }
