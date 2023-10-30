@@ -241,11 +241,10 @@ html, body {
     width: 100%;
     height: 500px;
     background-image: url("pics/office.jpg");
-    background-size:contain;
+    background-size:cover;
     background-position: right;
     position: relative;
-    /* margin-top: 10vw; */
-    margin-bottom: 7vw;
+    margin-bottom: 0;
 }
 .hero-contents {
     display: grid;
@@ -257,7 +256,7 @@ html, body {
     margin:0;
     left: 0; 
     top: 0;
-    padding-top: 3vw;
+    /* padding-top: 3vw; */
     background-image: linear-gradient(to right, rgba(30,30,30,1) 40%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.4) 80%,transparent);
 }
 .hero h1 {
@@ -468,6 +467,110 @@ html, body {
   object-fit:cover;
 }
 
+.letsConnect {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url("pics/office.jpg");
+    background-size:cover;
+    background-position: right;
+    position: relative;
+    margin-top: 8vw
+}
+.letsConnect-contents {
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: left;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin:0;
+    left: 0; 
+    top: 0;
+    background-image: linear-gradient(to right, rgba(30,30,30,1) 40%, rgba(30,30,30,0.7) 70%, rgba(30,30,30,0.4) 80%,transparent);
+}
+.letsConnect-contents h1{
+    font-size: 3vw;
+    font-family: 'Archivo Black', sans-serif;
+    color: rgba(64, 193, 221,1);
+    text-align: left;
+    margin: auto;
+    margin-left: 8vw;
+}
+
+.form-section {
+    width: 100%;
+}
+.form-contents {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    background-color: #38aac1;
+    margin: auto;
+
+}
+.address-info {
+    display: flex;
+    flex-direction: column;
+    background-color:aliceblue;
+    padding: 3vw;
+    border-radius: 1vw;
+    width: 25vw;
+    align-items: left;
+    
+}
+.address-info h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.5vw;
+    color: black;
+    margin: 0;
+}
+.address-info p {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1.3vw;
+    color: black;
+}
+.form-field form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    background-color:aliceblue;
+    padding: 3vw;
+    border-radius: 1vw;
+    width: 35vw;
+}
+form input {
+    width: 30vw;
+    height: 3.5vw;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1.3vw;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid grey; 
+
+}
+form textarea {
+    width: 30vw;
+    height: 10vw;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1.3vw;
+    color: black;
+    border-radius: 3px;
+}
+form button {
+    width: 9vw;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1.3vw;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: #ff9189;
+    border:0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
 footer {
     display: grid;
     grid-template-rows: 1fr 0.1fr;
@@ -476,6 +579,7 @@ footer {
     bottom: 0;
     font-family: 'Nunito', sans-serif; 
     color: whitesmoke;
+    margin-top: 3vw;
     
 }
 .footer-contents {
@@ -600,7 +704,14 @@ footer {
         box-shadow: -10vw 10vw 1vw rgba(0,0,0,0.25);
     }
 
-
+    .hero {
+        height: 250px;
+        
+    }
+    .hero-contents {
+        
+        height: 250px;
+    }
     .slogan {
         margin-top: 1rem;
     }
