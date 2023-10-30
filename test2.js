@@ -32,9 +32,9 @@ function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "anootech23@gmail.com",
-    Password: "58A11570B3D74B8CE0FC0CB6DA22BDF962A6",
-    To: "anootech23@gmail.com",
-    From: document.getElementById("email").value,
+    Password: "946D5EF401946A384CDAD2BB98A0811EB01F",
+    To: "aliomid.beh@gmail.com",
+    From: "aliomid.beh@gmail.com",
     Subject: "Random Subject (Must be edited in the form",
     Body:
       "Name: " +

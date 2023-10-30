@@ -17,7 +17,7 @@
           href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ultra&display=swap"
           rel="stylesheet"
         />
-        <script src="test2.js"></script>
+
         <script src="https://smtpjs.com/v3/smtp.js"></script>
       </head>
       <body>
@@ -82,14 +82,23 @@
                     <p>Mon-Fri: 8:00 - 5:00 (GMT-6)</p>
                 </div>
                 <div class="form-field">
-                    <form onsubmit="sendEmail(); reset(); return false">
+                  <form action="https://formsubmit.co/84d6ba3ea2f52cb453e58c07cb3e986c" method="POST">
+                      <input type="text" id="name" placeholder="Your Name" required>
+                      <input type="email" id="email" placeholder="Your Email" required>
+                      <input type="phone" id="phone" placeholder="Your Phone Number" required>
+                      <textarea type="phone" id="message" placeholder="How can we help you?" required></textarea>
+                      <button>Submit</button>
+                  </form>
+              </div>
+                <!-- <div class="form-field">
+                    <form onsubmit="sendEmail(); reset(); return false" method="POST">
                         <input type="text" id="name" placeholder="Your Name" required>
                         <input type="email" id="email" placeholder="Your Email" required>
                         <input type="phone" id="phone" placeholder="Your Phone Number" required>
                         <textarea type="phone" id="message" placeholder="How can we help you?" required></textarea>
                         <button>Submit</button>
                     </form>
-                </div>
+                </div> -->
             </div>  
 
         </section>
@@ -129,6 +138,7 @@
               <p>Copyright &copy 2023 Anoo Technologies. All rights reserved.</p>
             </div>
           </footer>
+          <script src="test2.js"></script>
     
 </body>
 </html>
