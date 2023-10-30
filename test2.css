@@ -120,7 +120,7 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 3%;
+    margin-top: 1.5%;
     
     
 }
@@ -132,7 +132,7 @@ html, body {
     padding-bottom: 15vw;
     align-items: center;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, transparent, white 80%);
+    background-image: linear-gradient(to bottom, transparent 60%, #298091 100%);
     padding-left: 3vw;
     gap: 0;
     justify-content: space-around;
@@ -150,7 +150,7 @@ html, body {
     font-size: 1.5vw;
     
     font-family: 'Archivo Black', sans-serif;
-    color: black;
+    color: rgba(245, 245, 245, 0.763);
     -webkit-text-stroke: 1px #3091a6;
     
 
@@ -160,11 +160,12 @@ html, body {
     list-style: none;
     width: 25vw;
     /* padding: 0.2rem; */
-    background-color: #3091a6;
+    background-color: #298091;
     z-index: calc(1 * var(--i));
     transition: 0.5s;
     padding: 1vw;
-    border-left: 0.5px solid whitesmoke;
+    border-left: 0.5px solid rgba(245, 245, 245, 0.763);
+    /* border-bottom: 0.5px solid rgba(245, 245, 245, 0.763); */
 
 
 }
@@ -176,7 +177,7 @@ html, body {
 }
 
 .block-list li::before {
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.763);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,12 +187,12 @@ html, body {
     left: -3vw;
     width: 3vw;
     height: 100%;
-    background-color: #3091a6;
+    background-color: rgba(41, 128, 145,1);
     transform-origin: right;
     transform: skewY(45deg);
     transition: 0.5s;
     font-size: 1.3vw;
-
+    /* border-bottom: 0.5px solid rgba(245, 245, 245, 0.763); */
 }
 
 .block-list li:hover::before {
@@ -202,16 +203,16 @@ html, body {
 .block-list li::after {
     content: "";
     position: absolute;
-    top:-3vw;
+    top:-2.9vw;
     left: 0;
     width: 100%;
     height: 3vw;
-    background-color: #3091a6;
+    background-color: rgba(41, 128, 145,0.9);
     transform-origin: bottom;
     transform: skewX(45deg);
     transition: 0.5s;
-    border-bottom: 0.2px solid whitesmoke;
-    border-left: 0.2px solid whitesmoke;
+    border-left: 0.5px solid rgba(245, 245, 245, 0.763);
+    border-bottom: 0.5px solid rgba(245, 245, 245, 0.763);
 }
 .block-list li:hover::after {
     background: rgba(64, 193, 221,0.8);
@@ -219,7 +220,7 @@ html, body {
 
 .block-list li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.763);
     /* text-transform: uppercase; */
     letter-spacing: 0.08vw;
     transition: 0.5s;
@@ -240,28 +241,47 @@ html, body {
     width: 100%;
     height: 500px;
     background-image: url("pics/office.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size:contain;
+    background-position: right;
     position: relative;
-    margin-top: 10vw;
+    /* margin-top: 10vw; */
     margin-bottom: 7vw;
 }
-.hero h1 {
-    font-size: 3vw;
-    font-family: 'Archivo Black', sans-serif;
-    color: whitesmoke;
+.hero-contents {
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: left;
     position: absolute;
     width: 100%;
     height: 500px;
     margin:0;
     left: 0; 
     top: 0;
-    background-image: linear-gradient(to bottom right, rgba(30,30,30,1) 10%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0) 100%);
-
-
+    padding-top: 3vw;
+    background-image: linear-gradient(to right, rgba(30,30,30,1) 40%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.4) 80%,transparent);
 }
-
-
+.hero h1 {
+    font-size: 3vw;
+    font-family: 'Archivo Black', sans-serif;
+    color: whitesmoke;
+    text-align: left;
+    margin: auto;
+    margin-left: 8vw;
+}
+.hero h2{
+    font-size: 2vw;
+    font-family: 'Archivo Black', sans-serif;
+    color: rgba(64, 193, 221,1);
+    text-align: left;
+    margin: auto;
+    margin-left: 8vw;
+}
+.hero a{
+    text-decoration: none;
+}
+.hero span {
+    color: rgba(64, 193, 221,1);
+}
 .entrySection {
     display: grid;
     grid-template-columns: auto;
