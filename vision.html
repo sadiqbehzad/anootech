@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision</title>
+    <link rel="stylesheet" href="test2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <script src="test2.js"></script>
+  </head>
+  <body>
+    <section class="navigation" id="navigate">
+        <button type="button" onclick = "window.open('Home.html','_blank')">Home</button>
+        <button type="button" onclick = "window.open('aboutus.html','_blank')">About Us</button>
+        <button type="button" onclick = "window.open('mission.html','_blank')">Mission</button>
+        <button type="button" onclick = "window.open('vision.html','_blank')">Vision</button>
+        <button type="button" onclick = "window.open('faqs.html','_blank')">FAQs</button>
+        <button type="button" onclick = "window.open('contact.html','_blank')">Contact Us</button>
+        <div class="drp-dwn-bttn">
+          <button type="button" id="drp-dwn-bttn" onmouseover="showDropdown('drp-dwn-cont')">Solutions&nbsp;&nbsp;&nbsp;⩔</button>
+          <nav class="dropdowns-contents" id="drp-dwn-cont" onmouseout="hideDropdown('drp-dwn-cont')">
+            <div class="it-infras">
+              <h3>IT Infrastructure Services</h3>
+              <ul class="servicesList">
+                <a href="itmngedser.html" target="_blank"><li>IT Managed Services</li></a>
+                <a href="netsetupandmgmnt.html" target="_blank"><li>Network Setup and Management</li></a>
+                <a href="hwsuppandmgmnt.html" target="_blank"><li>Hardware Support and Maintenance</li></a>
+                <a href="virtualization.html" target="_blank"><li>Virtualization Services</li></a>
+              </ul>
+            </div>
+            <div class="dev-and-sw">
+              <h3>Development and Software Services</h3>
+              <ul class="servicesList">
+                <a href="sw-dev.html" target="_blank"><li>Software Development</li></a>
+                <a href="web-dev.html" target="_blank"><li>Web Development and Design</li></a>
+                <a href="database.html" target="_blank"><li>Database Management</li></a>
+                <a href="data-backup.html" target="_blank"><li>Data Backup and Recovery</li></a>
+              </ul>
+            </div>
+            <div class="sec-and-consult">
+              <h3>Security and Consulting Services</h3>
+              <ul class="servicesList">
+                <a href="cyber-sec.html" target="_blank"><li>Cyber Security Services</li></a>
+                <a href="cloud.html" target="_blank"><li>Cloud Services</li></a>
+                <a href="it-consult.html" target="_blank"><li>IT Consulting</li></a>
+                <a href="helpdesk.html" target="_blank"><li>Helpdesk and Technical Support</li></a>
+              </ul>
+            </div>
+
+
+
+          </nav>
+        </div>
+        
+      
+    </section>
+    <div class="menuIcon">
+      <button id="menu" onclick="showHideMenu('navigate')">&#8801</button>
+    </div>
+    <div class="logo">
+      <a href="Home.html"><img src="pics/Logo.png" /></a>
+      
+    </div>
+
+    <section class="work-in-progress">
+        <div class="hero-contents">
+          <h1>Coming soon...</h1>
+        </div> 
+      </section>
+
+    <footer class="footer">
+        <div class="footer-contents">
+          <div class="footer-logo">
+            <a href="Home.html"><img src="pics/Logo.png" alt="Logo" /></a>
+            
+          </div>
+          <div class="second-part">
+            <div class="IT-Solutions-h2">
+              <h2>IT Solutions</h2>
+            </div>
+            <div class="IT-Solutions">
+              <a href="it-infra.html" target="_blank">IT Infrastructure Services</a>
+              <a href="dev-sw.html" target="_blank">Development and Software Services</a>
+              <a href="sec-consult.html" target="_blank">Security and Consulting Services</a>
+            </div>
+            <div class="mission-vision">
+              <a href="mission.html" target="_blank"><h2>Mission</h2></a>
+              <a href="vision.html" target="_blank"><h2>Vision</h2></a>
+            </div>
+          </div>
+          <div class="third-part">
+            <div class="contact-us-h2">
+              <h2>Contact Us</h2>
+            </div>
+            <div class="contact-us-p">
+              <p>#300-15300 Glenmore Drive<br />Calgary, AB T3M 000</p>
+              <p>#580-1100 John Smith Ave<br />Vancouver, BC V3Z 000</p>
+              <p>info@anootech.ca<br />+1 (123) 456-7890</p>
+              <p>Mon-Fri: 8:00 - 5:00 (GMT-6)</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy 2023 Anoo Technologies. All rights reserved.</p>
+        </div>
+      </footer>
+    </body>
+  </html>
+  
