@@ -23,10 +23,10 @@ function hideMenu(id) {
   document.getElementById(id).style.cssText = "display: none";
 }
 
-window.addEventListener("resize", function () {
-  "use strict";
-  window.location.reload();
-});
+// window.addEventListener("resize", function () {
+//   "use strict";
+//   window.location.reload();
+// });
 
 function sendEmail() {
   Email.send({
